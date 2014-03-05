@@ -12,15 +12,10 @@
 #pragma config CP = OFF         // FLASH Program Memory Code Protection bit (Code protection off)
 #pragma config BOREN = OFF
 
-
-/*
- * 
- */
 int main() {
-    TRISA = 0;
+    TRISA = 0x00;
     PORTA = 0x01;
     while(1){
-        PORTA ^= 0x01;
-        _delay(20000000);
+
     }
 }

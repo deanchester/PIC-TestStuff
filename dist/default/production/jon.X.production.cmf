@@ -11,13 +11,12 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/cgtuWLw1X.obj
+$/tmp/cgt29O58u.obj
 end_init CODE 0 0 0 3 2
 config CONFIG 0 2007 2007 1 2
 $dist/default/production/jon.X.production.obj
 cinit CODE 0 7FC 7FC 4 2
-cstackCOMMON COMMON 1 70 70 3 1
-maintext CODE 0 7E1 7E1 1B 2
+maintext CODE 0 7F4 7F4 8 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -28,12 +27,12 @@ BANK0 0020-006F 1
 BANK1 00A0-00EF 1
 BANK2 0110-016F 1
 BANK3 0190-01EF 1
-CODE 0003-07E0 2
+CODE 0003-07F3 2
 CODE 0800-1FFF 2
-COMMON 0073-007D 1
-CONST 0003-07E0 2
+COMMON 0070-007D 1
+CONST 0003-07F3 2
 CONST 0800-1FFF 2
-ENTRY 0003-07E0 2
+ENTRY 0003-07F3 2
 ENTRY 0800-1FFF 2
 IDLOC 2000-2003 2
 RAM 0020-006F 1
@@ -45,9 +44,9 @@ SFR1 0080-009F 1
 SFR2 0100-010F 1
 SFR3 0180-018F 1
 STACK 0110-016F 1
-STRCODE 0003-07E0 2
+STRCODE 0003-07F3 2
 STRCODE 0800-1FFF 2
-STRING 0003-07E0 2
+STRING 0003-07F3 2
 STRING 0800-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -63,19 +62,17 @@ STRING 0800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/jon.X.production.obj
-"/Applications/microchip/xc8/v1.30/include/pic16f76.h":1164 7E1 maintext CODE
-"/Users/dean/src/MPLABXProjects/jon.X/main.c":19 7E1 maintext CODE
-"/Users/dean/src/MPLABXProjects/jon.X/main.c":20 7E1 maintext CODE
-"/Users/dean/src/MPLABXProjects/jon.X/main.c":21 7E4 maintext CODE
-"/Users/dean/src/MPLABXProjects/jon.X/main.c":23 7E8 maintext CODE
-"/Users/dean/src/MPLABXProjects/jon.X/main.c":24 7EE maintext CODE
-"/Users/dean/src/MPLABXProjects/jon.X/main.c":22 7FB maintext CODE
-"/tmp/cgtewz5Ln":169 7FC cinit CODE
-"/tmp/cgtewz5Ln":172 7FC cinit CODE
-"/tmp/cgtewz5Ln":178 7FC cinit CODE
-"/tmp/cgtewz5Ln":179 7FC cinit CODE
-"/Users/dean/src/MPLABXProjects/jon.X/main.c":26 7FC maintext CODE
-"/tmp/cgtewz5Ln":180 7FD cinit CODE
+"/Applications/microchip/xc8/v1.30/include/pic16f76.h":1164 7F4 maintext CODE
+"/Users/dean/src/MPLABXProjects/jon.X/main.c":15 7F4 maintext CODE
+"/Users/dean/src/MPLABXProjects/jon.X/main.c":19 7F4 maintext CODE
+"/Users/dean/src/MPLABXProjects/jon.X/main.c":20 7F7 maintext CODE
+"/Users/dean/src/MPLABXProjects/jon.X/main.c":21 7FB maintext CODE
+"/tmp/cgtyuXbDA":169 7FC cinit CODE
+"/tmp/cgtyuXbDA":172 7FC cinit CODE
+"/tmp/cgtyuXbDA":178 7FC cinit CODE
+"/tmp/cgtyuXbDA":179 7FC cinit CODE
+"/Users/dean/src/MPLABXProjects/jon.X/main.c":24 7FC maintext CODE
+"/tmp/cgtyuXbDA":180 7FD cinit CODE
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -89,20 +86,20 @@ $dist/default/production/jon.X.production.obj
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 __S0 2008 0 ABS 0 - -
-__S1 73 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __Hintentry 0 0 CODE 0 intentry -
 __Lintentry 0 0 CODE 0 intentry -
-_main FC2 0 CODE 0 maintext dist/default/production/jon.X.production.obj
-___sp 0 0 STACK 2 stack /tmp/cgtuWLw1X.obj
+_main FE8 0 CODE 0 maintext dist/default/production/jon.X.production.obj
+___sp 0 0 STACK 2 stack /tmp/cgt29O58u.obj
 btemp 7E 0 ABS 0 - dist/default/production/jon.X.production.obj
 ltemp 7E 0 ABS 0 - dist/default/production/jon.X.production.obj
 ttemp 7E 0 ABS 0 - dist/default/production/jon.X.production.obj
 wtemp 7E 0 ABS 0 - dist/default/production/jon.X.production.obj
-start 0 0 CODE 0 init /tmp/cgtuWLw1X.obj
+start 0 0 CODE 0 init /tmp/cgt29O58u.obj
 _TRISA 85 0 ABS 0 - dist/default/production/jon.X.production.obj
 _PORTA 5 0 ABS 0 - dist/default/production/jon.X.production.obj
-reset_vec 0 0 CODE 0 reset_vec /tmp/cgtuWLw1X.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/cgt29O58u.obj
 ltemp0 7E 0 ABS 0 - dist/default/production/jon.X.production.obj
 ttemp0 7E 0 ABS 0 - dist/default/production/jon.X.production.obj
 wtemp0 7E 0 ABS 0 - dist/default/production/jon.X.production.obj
@@ -129,7 +126,7 @@ __Hcommon 0 0 ABS 0 common -
 __Lcommon 0 0 ABS 0 common -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
-___int_sp 0 0 STACK 2 stack /tmp/cgtuWLw1X.obj
+___int_sp 0 0 STACK 2 stack /tmp/cgt29O58u.obj
 __Habs1 0 0 ABS 0 abs1 -
 __Labs1 0 0 ABS 0 abs1 -
 __Hsfr0 0 0 ABS 0 sfr0 -
@@ -142,8 +139,8 @@ __Hsfr3 0 0 ABS 0 sfr3 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Hcode 0 0 ABS 0 code -
 __Lcode 0 0 ABS 0 code -
-stackhi 0 0 ABS 0 - /tmp/cgtuWLw1X.obj
-stacklo 0 0 ABS 0 - /tmp/cgtuWLw1X.obj
+stackhi 0 0 ABS 0 - /tmp/cgt29O58u.obj
+stacklo 0 0 ABS 0 - /tmp/cgt29O58u.obj
 __Hinit 0 0 CODE 0 init -
 __Linit 0 0 CODE 0 init -
 __end_of_main FF8 0 CODE 0 maintext dist/default/production/jon.X.production.obj
@@ -180,20 +177,20 @@ __Hend_init 6 0 CODE 0 end_init -
 __Lend_init 0 0 CODE 0 end_init -
 __Hreset_vec 0 0 CODE 0 reset_vec -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-intlevel0 0 0 CODE 0 functab /tmp/cgtuWLw1X.obj
+intlevel0 0 0 CODE 0 functab /tmp/cgt29O58u.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/jon.X.production.obj
-intlevel1 0 0 CODE 0 functab /tmp/cgtuWLw1X.obj
-intlevel2 0 0 CODE 0 functab /tmp/cgtuWLw1X.obj
-intlevel3 0 0 CODE 0 functab /tmp/cgtuWLw1X.obj
-intlevel4 0 0 CODE 0 functab /tmp/cgtuWLw1X.obj
-intlevel5 0 0 CODE 0 functab /tmp/cgtuWLw1X.obj
+intlevel1 0 0 CODE 0 functab /tmp/cgt29O58u.obj
+intlevel2 0 0 CODE 0 functab /tmp/cgt29O58u.obj
+intlevel3 0 0 CODE 0 functab /tmp/cgt29O58u.obj
+intlevel4 0 0 CODE 0 functab /tmp/cgt29O58u.obj
+intlevel5 0 0 CODE 0 functab /tmp/cgt29O58u.obj
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/jon.X.production.obj
+__pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/production/jon.X.production.obj
 start_initialization FF8 0 CODE 0 cinit dist/default/production/jon.X.production.obj
 __Hmaintext 0 0 ABS 0 maintext -
 __Lmaintext 0 0 ABS 0 maintext -
-__pmaintext FC2 0 CODE 0 maintext dist/default/production/jon.X.production.obj
+__pmaintext FE8 0 CODE 0 maintext dist/default/production/jon.X.production.obj
 __initialization FF8 0 CODE 0 cinit dist/default/production/jon.X.production.obj
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production/jon.X.production.obj
 # %SPLITSTAB Section
@@ -224,5 +221,4 @@ __CFG_CP$OFF 0 0 ABS 0 - dist/default/production/jon.X.production.obj
 reset_vec 0 0 0 3 2
 cinit 0 7FC FF8 4 2
 config 0 2007 400E 1 2
-cstackCOMMON 1 70 70 3 1
-maintext 0 7E1 FC2 1B 2
+maintext 0 7F4 FE8 8 2
