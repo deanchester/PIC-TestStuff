@@ -816,24 +816,41 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 15: int main() {
 [e :U _main ]
 [f ]
-[; ;main.c: 19: TRISA = 0x00;
+[; ;main.c: 16: TRISA = 0x20;
+"16
+[e = _TRISA -> -> 32 `i `uc ]
+[; ;main.c: 19: while(1){
 "19
-[e = _TRISA -> -> 0 `i `uc ]
-[; ;main.c: 20: PORTA = 0x01;
-"20
-[e = _PORTA -> -> 1 `i `uc ]
-[; ;main.c: 21: while(1){
-"21
 [e :U 83 ]
 {
+[; ;main.c: 20: if((PORTA&0x20)==0) {
+"20
+[e $ ! == & -> _PORTA `i -> 32 `i -> 0 `i 85  ]
+{
+[; ;main.c: 21: PORTA |= 0x01;
+"21
+[e =| _PORTA -> -> 1 `i `uc ]
+"22
+}
+[; ;main.c: 22: } else {
+[e $U 86  ]
+[e :U 85 ]
+{
+[; ;main.c: 23: PORTA &= ~0x01;
 "23
+[e =& _PORTA -> ~ -> 1 `i `uc ]
+"24
+}
+[e :U 86 ]
+"25
 }
 [e :U 82 ]
-"21
+"19
 [e $U 83  ]
 [e :U 84 ]
-[; ;main.c: 23: }
 [; ;main.c: 24: }
-"24
+[; ;main.c: 25: }
+[; ;main.c: 26: }
+"26
 [e :UE 81 ]
 }

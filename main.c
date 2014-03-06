@@ -13,9 +13,13 @@
 #pragma config BOREN = OFF
 
 int main() {
-    TRISA = 0x00;
-    PORTA = 0x01;
+    ADCON0 = 0;
+    TRISA = 0x20;
     while(1){
-
+        if((PORTA&0x20)==0) {
+            PORTA |= 0x01;
+        } else {
+            PORTA &= ~0x01;
+        }
     }
 }
